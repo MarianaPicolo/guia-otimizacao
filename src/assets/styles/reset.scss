@@ -1,0 +1,174 @@
+/*******************
+ Box Sizing
+ *******************/
+ html {
+	box-sizing: border-box;
+	font-size: 1rem;
+  }
+  
+  *,
+  *::before,
+  *::after {
+	box-sizing: inherit;
+  }
+  
+  /*******************
+	 Core body defaults
+	 @see https://hankchizljaw.com/wrote/a-modern-css-reset/
+	 *******************/
+  body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	font-family: 'Barlow', sans-serif;
+  background-color: var(--white);
+  color: var(--text-color)
+  }
+  
+  /****************************
+	 Generic Margins and Paddings
+	 ****************************/
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  p,
+  pre,
+  blockquote,
+  figure,
+  figcaption,
+  hr,
+  dl,
+  dd {
+	margin: 0;
+	padding: 0;
+  }
+  
+  /*******************
+	 Lists
+	 *******************/
+  ul {
+	list-style: none;
+  }
+  
+  /*******************
+	 Forms and buttons
+	 *******************/
+  input,
+  textarea,
+  select,
+  button {
+	letter-spacing: inherit;
+	color: inherit;
+	font: inherit;
+  }
+  
+  /* I usually expand input and textarea to full-width */
+  input[type='text'],
+  textarea {
+	width: 100%;
+  }
+  
+  /* More friendly border */
+  input,
+  textarea,
+  button {
+	border: 1px solid gray;
+  }
+  
+  /* Some defaults for one-liner buttons */
+  button {
+	border-radius: 0;
+	background-color: transparent;
+	padding: 0.75em 1em;
+	line-height: inherit;
+  }
+  
+  button * {
+	pointer-events: none;
+  }
+  
+  /***********************************
+	 Easy responsive for media elements
+	 ***********************************/
+  img,
+  iframe,
+  video,
+  object,
+  embed {
+	display: block;
+	max-width: 100%;
+  }
+  
+  svg {
+	max-width: 100%;
+  }
+  
+  /*******************
+	 Useful table styles
+	 *******************/
+  table {
+	width: 100%;
+	table-layout: fixed;
+  }
+  
+  /*******************
+	 The hidden attribute
+	 *******************/
+  [hidden] {
+	visibility: hidden;
+	opacity: 0;
+  }
+  
+  /*******************
+	 Noscript
+	 *******************/
+  noscript {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+  }
+  
+  /*******************
+	 Tabindex
+	 *******************/
+  [tabindex='-1'] {
+	outline: none !important;
+  }
+  
+  /*******************
+	 Remove animations and transitions
+	 @see https://hankchizljaw.com/wrote/a-modern-css-reset/
+	 *******************/
+  @media (prefers-reduced-motion: reduce) {
+	* {
+	  transition-duration: 0.01ms !important;
+	  animation-duration: 0.01ms !important;
+	  animation-iteration-count: 1 !important;
+	  scroll-behavior: auto !important;
+	}
+  }
+  
+  /*******************
+	 * Screen-ready only class to hide content visually
+	 * Solution by Joe Watkins.
+	 * @see https://zellwk.com/blog/hide-content-accessibly/
+	 *******************/
+  .sr-only {
+	position: absolute;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+  }

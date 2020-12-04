@@ -1,0 +1,28 @@
+// Default variables
+html {
+    --base-font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    --white: #fff;
+    --white-fog: #fafafa;
+    --pink: #f5efef;
+    --soft-blue: #c6d1e6;
+    --blue: #30456e;
+    --text-color: #434343;
+    --border: 0px 20px 13px rgba(0, 0, 0, 0.035),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --space: 3.5rem;
+    --content-width: 60ch;
+    --radius: 30px;
+}
+
+.content {
+    padding: 4rem 0;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+}
