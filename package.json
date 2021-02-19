@@ -10,6 +10,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-flexsearch": "^1.0.5",
     "typeface-barlow": "^1.1.13"
   },
   "devDependencies": {
