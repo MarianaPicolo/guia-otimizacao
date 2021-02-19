@@ -13,6 +13,19 @@ module.exports = {
         typeName: 'Post',
         path: './artigos/conteudos/**/*.md',
       }
+    },
+    {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        searchFields: ['title'],
+        collections: [
+          {
+            typeName: 'Post',
+            indexName: 'Post',
+            fields: ['title', 'id', 'description', 'topic', 'content']
+          }
+        ]
+      }
     }
   ],
   templates: {

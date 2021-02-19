@@ -4,6 +4,8 @@
       <h1>
         Um Guia voltado à otimização de desempenho em aplicações web front-end
       </h1>
+      <!-- <div>
+      </div> -->
     </section>
 
     <div class="content">
@@ -35,7 +37,7 @@ export default {
 
 <page-query>
 query {
-  posts: allPost(filter: { published: { eq: true }}) {
+  posts: allPost() {
     edges {
       node {
         id
@@ -56,14 +58,17 @@ query {
 .hero {
   background: linear-gradient(111.16deg, #f5efef 19.27%, #c6d1e6 100%);
   color: rgba(48, 69, 110, 1);
-  min-height: 100vh;
+  min-height: calc(100vh - 4rem);
   display: flex;
   align-items: center;
   justify-content: center;
   h1 {
-    max-width: 40ch;
-    font-size: 4rem;
-    text-align: center;
+    max-width: 25ch;
+    font-size: 4.5rem;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.015em;
     @media (max-width: 48rem) {
       font-size: 2rem;
     }
