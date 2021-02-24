@@ -37,7 +37,7 @@ export default {
 
 <page-query>
 query {
-  posts: allPost(filter: { published: { eq: true }}) {
+  posts: allPost() {
     edges {
       node {
         id
