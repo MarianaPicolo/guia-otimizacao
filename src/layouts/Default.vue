@@ -1,30 +1,6 @@
 <template>
   <div id="app">
-    <header class="header">
-      <nav class="nav">
-        <ul class="menu">
-          <li>Guia Desempenho</li>
-          <li>Guia Desempenho</li>
-          <li style="width: 30%">
-            <input
-              id="search"
-              v-model="searchTerm"
-              class="input"
-              type="text"
-              placeholder="Digite para buscar"
-            />
-            <g-link
-              v-for="result in searchResults"
-              :key="result.id"
-              :to="result.path"
-              class="navbar-item"
-            >
-              {{ result.title }}
-            </g-link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <Nav />
 
     <transition name="fade" appear>
       <main class="main container">
@@ -37,10 +13,12 @@
 </template>
 
 <script>
-import Search from 'gridsome-plugin-flexsearch/SearchMixin';
+import Nav from '../components/Nav';
 
 export default {
-  mixins: [Search],
+  components: {
+    Nav,
+  },
 };
 </script>
 
@@ -53,15 +31,6 @@ query {
 </static-query>
 
 <style lang="scss" scoped>
-.nav {
-  padding: 2rem;
-
-  .menu {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
 .footer {
   position: absolute;
   left: 0;

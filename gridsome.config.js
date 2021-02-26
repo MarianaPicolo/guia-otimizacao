@@ -17,7 +17,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-flexsearch',
       options: {
-        searchFields: ['title'],
+        searchFields: ['title', 'content'],
         collections: [
           {
             typeName: 'Post',

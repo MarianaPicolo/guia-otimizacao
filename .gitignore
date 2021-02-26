@@ -7,5 +7,5 @@ dist
 .env
 .env.*
 node_modules/
-TODO
+yarn.lock *
 yarn.lock
