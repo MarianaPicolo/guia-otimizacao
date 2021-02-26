@@ -2,7 +2,8 @@
   <Layout>
     <section class="hero">
       <h1>
-        Um Guia voltado à otimização de desempenho em aplicações web front-end
+        Um Guia voltado à otimização de desempenho em aplicações
+        <i>web front-end</i>
       </h1>
       <!-- <div>
       </div> -->
@@ -37,7 +38,7 @@ export default {
 
 <page-query>
 query {
-  posts: allPost() {
+  posts: allPost(filter: { published: { eq: true }}){
     edges {
       node {
         id
