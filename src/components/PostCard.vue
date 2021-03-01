@@ -1,6 +1,5 @@
 <template>
   <g-link class="link post-card" :to="post.path">
-    <div class="box" src="" alt=""></div>
     <h3 class="post-card__title" v-html="post.title" />
     <p class="post-card__description" v-html="post.description" />
 
@@ -50,12 +49,6 @@ export default {
   }
 
   &__description {
-  }
-
-  .box {
-    height: 50px;
-    width: 50px;
-    background-color: var(--blue);
   }
 }
 </style>

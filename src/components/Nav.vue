@@ -4,7 +4,7 @@
       <ul class="menu">
         <li class="menu__link"><g-link to="/">Início</g-link></li>
         <li class="menu__link"><g-link to="/#topicos">Artigos</g-link></li>
-        <li style="width: 30%; position: relative; display: block;">
+        <li>
           <input
             id="search"
             v-model="searchTerm"
@@ -33,7 +33,7 @@ import Search from 'gridsome-plugin-flexsearch/SearchMixin';
 
 export default {
   mixins: [Search],
-  name: 'Nav'
+  name: 'Nav',
 };
 </script>
 
@@ -58,6 +58,25 @@ nav {
       color: var(--blue);
       font-size: 1.3rem;
       font-weight: 500;
+    }
+
+    li {
+      &:nth-child(3) {
+        width: 30%;
+        position: relative;
+        display: block;
+      }
+    }
+
+    @media (max-width: 48rem) {
+      li {
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          width: 50%;
+        }
+      }
     }
   }
 }

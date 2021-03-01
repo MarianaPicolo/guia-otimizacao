@@ -94,6 +94,7 @@ query {
     @media (max-width: 48rem) {
       grid-template-columns: 1fr;
       grid-gap: 1rem;
+      justify-items: center;
     }
   }
   @media (max-width: 48rem) {

@@ -102,6 +102,14 @@ a {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: 'sidebar content';
+  min-height: 100vh;
+
+  @media (max-width: 48rem) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'sidebar'
+    'content';
+  }
 
   aside {
     grid-area: sidebar;
