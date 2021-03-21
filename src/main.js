@@ -2,6 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import '~/assets/styles/reset.scss';
 import '~/assets/styles/variables.scss';
+import '~/assets/styles/typography.scss'
 
 require('typeface-barlow');
 import DefaultLayout from '~/layouts/Default.vue';

@@ -44,11 +44,14 @@ a {
 }
 
 nav {
-  padding: 2rem;
+  padding: 1.5rem;
 
   .menu {
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 0;
 
     a {
       text-decoration: none;
@@ -61,6 +64,7 @@ nav {
     }
 
     li {
+      margin-bottom: 0;
       &:nth-child(3) {
         width: 30%;
         position: relative;

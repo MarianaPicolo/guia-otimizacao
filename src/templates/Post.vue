@@ -27,14 +27,10 @@
           <h1>
             {{ $page.post.title }}
           </h1>
-
-          <!-- <contentMeta :content="$page.content" /> -->
         </header>
 
         <article class="content-box">
           <div class="text" v-html="$page.post.content" />
-
-          <!-- <div class="content__footer"></div> -->
         </article>
       </section>
     </div>
@@ -50,10 +46,6 @@ export default {
   },
   created() {
     this.subtitles = this.$page.post.subtitles;
-  },
-  components: {
-    // contentMeta,
-    // contentTags,
   },
   metaInfo() {
     return {
@@ -103,35 +95,44 @@ a {
   gap: 0px 0px;
   grid-template-areas: 'sidebar content';
   min-height: 100vh;
+  justify-items: center;
 
   @media (max-width: 48rem) {
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    'sidebar'
-    'content';
+    grid-template-areas:
+      'sidebar'
+      'content';
   }
 
   aside {
     grid-area: sidebar;
     padding: 3rem;
-    background-color: var(--soft-blue);
     height: 100%;
+    border-right-color: var(--soft-blue);
 
     h3 {
       margin-bottom: 3rem;
     }
 
     .topics {
-      font-weight: 500;
+      font-weight: 400;
+      font-size: 1.1rem;
+      list-style-type: none;
+      padding: 1rem;
 
       li {
+        transition: 0.1s;
+
         &:hover {
-          background-color: #bac6db;
+          font-weight: 500;
         }
 
         &:not(:last-of-type) {
           margin-bottom: 1.5rem;
         }
+      }
+
+      &__item {
       }
     }
   }
@@ -149,8 +150,8 @@ a {
 
     .content-box {
       margin: 0 auto;
-      max-width: 70ch;
-      font-size: 1.1rem;
+      max-width: 75ch;
+      font-size: 1.15rem;
       line-height: 1.7;
       text-align: justify;
     }

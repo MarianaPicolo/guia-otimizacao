@@ -9,7 +9,7 @@
       </div> -->
     </section>
 
-    <div class="content">
+    <div class="content" id="topicos">
       <h2>Explorar Tópicos</h2>
 
       <div class="post-list">
