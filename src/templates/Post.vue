@@ -90,7 +90,7 @@ a {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2.5fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: 'sidebar content';
@@ -168,7 +168,7 @@ a {
 
   section {
     grid-area: content;
-    padding: 3rem;
+    padding: 5rem 0;
 
     h1 {
       text-align: center;
