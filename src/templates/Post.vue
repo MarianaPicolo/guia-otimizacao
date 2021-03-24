@@ -121,18 +121,47 @@ a {
       padding: 1rem;
 
       li {
-        transition: 0.1s;
-
-        &:hover {
-          font-weight: 500;
+        a {
+          &:hover {
+            font-weight: 500;
+          }
         }
 
         &:not(:last-of-type) {
-          margin-bottom: 1.5rem;
+          margin-bottom: 1rem;
         }
       }
 
-      &__item {
+      &__item-depth-1 {
+        margin-bottom: 0;
+        padding: 0.4rem 0;
+        font-size: 1.35rem;
+        transition: border-color 0.3s;
+        font-weight: 500;
+      }
+
+      &__item-depth-2 {
+        margin-bottom: 0;
+        padding: 0.4rem 0;
+        font-size: 1.15rem;
+        transition: border-color 0.3s;
+        font-weight: 400;
+      }
+
+      &__item-depth-3 {
+        margin-bottom: 0;
+        margin-top: -0.6rem;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.95rem;
+        opacity: 0.8;
+      }
+
+      &__item-depth-4 {
+        margin-bottom: 0;
+        margin-top: -0.6rem;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+        opacity: 0.8;
       }
     }
   }

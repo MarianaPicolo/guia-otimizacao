@@ -8,7 +8,14 @@
       </main>
     </transition>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div>
+        <a href="https://github.com/MarianaPicolo/guia-otimizacao">
+          Este projeto é aberto a toda a comunidade e pode ser encontrado no
+          GitHub
+        </a>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -37,5 +44,21 @@ query {
   right: 0;
   background-color: #434343;
   padding: 2rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    color: var(--white-fog);
+
+    a {
+      color: var(--white);
+      text-decoration: none;
+
+      &:hover {
+        transition: all 0.2s;
+        font-weight: 600;
+      }
+    }
+  }
 }
 </style>
