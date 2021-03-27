@@ -1,6 +1,6 @@
 ---
 title: Ferramentas de diagnóstico
-date: 2021-03-07
+date: 2021-03-02
 topic: diagnostico
 tags: ['diagnostico', 'ferramentas']
 author: Mariana Pícolo
@@ -90,8 +90,6 @@ O [WebPageTest](https://www.webpagetest.org/) é uma ferramenta que mede e anali
 
 ## Auditando CSS
 
-o tamanho do css importa e bla bla pode ser uma das causas de lentidao bla bla
-
 O tamanho dos arquivos de CSS também podem impactar o carregamento de uma página _web_, pois é um recurso que pode bloquear o processo de renderização. [4]
 Existem algumas ferramentas capazes de auditar, em específico, o CSS utilizado em uma página _web_. Ferramentas como [CSS Stats](https://cssstats.com) e o DevTools do Google Chrome.
 
@@ -141,8 +139,8 @@ As ferramentas de desenvolvedor do Google Chrome também apresentam uma seção 
 
 ## Referências
 
-- [1] https://developers.google.com/web/tools/lighthouse;
-- [2] https://www.webpagetest.org/;
-- [3] https://yellowlab.tools/;
-- [4] https://web.dev/extract-critical-css/;
-- [5] https://cssstats.com
+- (1) [Google Developers: Lighthouse](https://developers.google.com/web/tools/lighthouse);
+- (2) [Catchpoint: WebPageTest](https://www.webpagetest.org/);
+- (3) [Yellow Labs Tools](https://yellowlab.tools/);
+- (4) [Milica Mihajlija: Extract critical CSS](https://web.dev/extract-critical-css/);
+- (5) [CSS STATS](https://cssstats.com);

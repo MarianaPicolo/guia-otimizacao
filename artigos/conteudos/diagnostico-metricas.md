@@ -1,6 +1,6 @@
 ---
 title: Métricas
-date: 2021-03-07
+date: 2021-03-03
 topic: diagnostico
 tags: ['diagnostico', 'métricas']
 author: Mariana Pícolo
@@ -8,7 +8,7 @@ published: true
 description: Esta seção apresenta as métricas que podem ajudar a entender os problemas de desempenho em aplicações front-end.
 ---
 
-Notar que uma página web apresenta lentidão em seu carregamento ao ser acessada, ainda não é suficiente para estabelecer um futuro processo de refatoração visando melhora de seu desempenho. Esta seção explicita as ferramentas e métricas disponíveis que permitem diagnosticar desempenho no front-end a fim de ajudar desenvolvedores, designers e times em geral neste processo.
+Notar que uma página web apresenta lentidão em seu carregamento ao ser acessada, ainda não é suficiente para estabelecer um futuro processo de refatoração visando melhora de seu desempenho. Esta seção explicita as métricas disponíveis que permitem diagnosticar desempenho no front-end a fim de ajudar desenvolvedores, designers e times em geral neste processo.
 
 ## Introdução
 
@@ -42,7 +42,7 @@ First input delay mede o tempo da primeira interação do usuário com a página
 
 O atraso dos eventos de input geralmente está associado ao tamanho dos arquivos JavaScript enviados ao navegador, que enquanto analisa e executa o código recebido via requisição, o impede de executar os outros processos de renderização da página, pois o código JavaScript pode alterar o DOM. [4]
 
-De acordo com o relatório anual divulgado pelo Web Almanac, existe uma correlação direta entre a velocidade da rede e a FID mais rápida, variando de 73% nas redes 2G a 87% nas redes 4G. Redes mais rápidas ajudam a fazer downloads de scripts mais rapidamente, o que consequentemente reduz o número de tarefas bloqueando a thread principal do navegador. [2]
+De acordo com o relatório anual divulgado pelo Web Almanac, existe uma correlação direta entre a velocidade da rede e a FID mais rápida, variando de 73% nas redes 2G a 87% nas redes 4G. Redes mais rápidas ajudam a fazer downloads de scripts mais rapidamente, o que consequentemente reduz o número de tarefas bloqueando a _thread_ principal do navegador. [2]
 
 ![Fonte: Web Almanac - 2020. [2]](./imagens/diagnostico/performance-fid-by-connection-type.png)
 
@@ -50,13 +50,13 @@ De acordo com o relatório anual divulgado pelo Web Almanac, existe uma correla�
 
 Time to interactive mede o tempo desde o começo do carregamento da página até o momento em que os seus recursos foram carregados e são capazes de responder às interações do usuário, ou seja, o tempo necessário para que a página se torne completamente visível e interativa. [5]
 
-A TTI representa o momento em que a thread principal do JavaScript, que opera sempre em uma única thread, fica ociosa por alguns segundos porque precisa analisar e compilar o código. A ideia é medir a eficiência de um site ou aplicativo ao interagir com ele. Como depende da thread principal, é altamente dependente da quantidade de JavaScript além da velocidade da CPU de um dispositivo. [8]
+A TTI representa o momento em que a _thread_ principal do JavaScript, fica ociosa por alguns segundos porque precisa analisar e compilar o código. A ideia é medir a eficiência de um site ou aplicativo ao interagir com ele. Como depende da _thread_ principal, é altamente dependente da quantidade de JavaScript além da velocidade da CPU de um dispositivo. [8]
 
 ### Total Blocking Time (TBT)
 
-Total blocking time mede o tempo decorrido entre a FCP e a TTI, indicando que a thread principal do navegador ficou bloqueada a ponto de impedi-lo de responder às interações do usuário. [6]
+Total blocking time mede o tempo decorrido entre a FCP e a TTI, indicando que a _thread_ principal do navegador ficou bloqueada a ponto de impedi-lo de responder às interações do usuário. [6]
 
-A thread principal é considerada bloqueada quando a duração de um processo ultrapassa 50 milissegundos. O navegador não pode interromper uma tarefa em progresso. Portanto, se o usuário interagir com a página durante um processo em andamento, não receberá resposta até o processo estar completo. A TBT é a soma da duração de todos os bloqueios que excedem 50 milissegundos ocorridos entre a FCP e a TTI. [6]
+A _thread_ principal é considerada bloqueada quando a duração de um processo ultrapassa 50 milissegundos. O navegador não pode interromper uma tarefa em progresso. Portanto, se o usuário interagir com a página durante um processo em andamento, não receberá resposta até o processo estar completo. A TBT é a soma da duração de todos os bloqueios que excedem 50 milissegundos ocorridos entre a FCP e a TTI. [6]
 
 ### Cumulative Layout Shift (CLS)
 
@@ -66,12 +66,12 @@ Mudanças de layout ocorrem apenas quando os elementos existentes mudam sua posi
 
 ## Referências
 
-- [1] https://web.dev/fcp/
-- [2] https://almanac.httparchive.org/en/2020/performance
-- [3] https://web.dev/lcp
-- [4] https://web.dev/fid
-- [5] https://web.dev/tti
-- [6] https://web.dev/tbt
-- [7] https://web.dev/cls
-- [8] https://calibreapp.com/blog/time-to-interactive
-- [9] https://developers.google.com/web/tools/lighthouse/
+- (1) [web.dev: First Contentful Paint (FCP)](https://web.dev/fcp/);
+- (2) [Web Almanac: Performance](https://almanac.httparchive.org/en/2020/performance);
+- (3) [web.dev: Largest Contentful Paint (LCP)](https://web.dev/lcp);
+- (4) [web.dev: First Input Delay (FID)](https://web.dev/fid);
+- (5) [web.dev: Time to Interactive (TTI)](https://web.dev/tti);
+- (6) [web.dev: Total Blocking Time (TBT)](https://web.dev/tbt);
+- (7) [web.dev: Cumulative Layout Shift (CLS)](https://web.dev/cls);
+- (8) [Radimir Bitsov: Time to Interactive: Focusing on the Human-Centric Metrics](https://calibreapp.com/blog/time-to-interactive);
+- (9) [Google Developers: Lighthouse](https://developers.google.com/web/tools/lighthouse/);
