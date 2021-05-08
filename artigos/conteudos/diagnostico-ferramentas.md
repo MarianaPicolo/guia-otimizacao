@@ -88,6 +88,16 @@ O [WebPageTest](https://www.webpagetest.org/) é uma ferramenta que mede e anali
 
 ![Fonte: Autor](./imagens/diagnostico/D-y03.png)
 
+## Monitorando o tamanho da sua aplicação
+
+Existem algumas ferramentas que podem auxiliar a monitorar o tamanho da aplicação, facilitando o diagnóstico das partes que mais entregam arquivos Javascript, por exemplo. 
+
+Ferramentas como [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer), [Rollup Plugin Visualizer](https://github.com/btd/rollup-plugin-visualizer) e [parcel-plugin-bundle-visualiser](https://github.com/gregtillbrook/parcel-plugin-bundle-visualiser) geram um mapa interativo que exibe o tamanho dos arquivos contidos no _bundle_.
+
+![Fonte: Webpack Bundle Analyzer](https://cloud.githubusercontent.com/assets/302213/20628702/93f72404-b338-11e6-92d4-9a365550a701.gif)
+> Fonte: [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+
+
 ## Auditando CSS
 
 O tamanho dos arquivos de CSS também podem impactar o carregamento de uma página _web_, pois é um recurso que pode bloquear o processo de renderização. [4]
