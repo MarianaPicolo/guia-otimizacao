@@ -183,6 +183,10 @@ a {
       font-size: 1.15rem;
       line-height: 1.7;
       text-align: justify;
+      @media (max-width: 48rem) {
+        padding: 0 1rem;
+        max-width: 95vw;
+      }
     }
   }
 }
