@@ -30,6 +30,8 @@ WebP é um formato de imagem que suporta compressão com e sem perdas. De acordo
 
 É importante ressaltar que até o momento, [nem todos os navegadores modernos suportam WebP](https://caniuse.com/webp). por isso, é necessário utilizar um fallback em sua aplicação, para que todos os browsers consigam exibir as imagens [3]. Para isso, é possível utilizar a tag `<picture>`, que pode conter um ou mais elementos `<source>`, onde o navegador escolherá a melhor alternativa para ser exibida. Caso nenhum caso seja correspondido, o navegador exibirá o elemento `<img>` fornecido. [5]. [Leia mais no exemplo disponibilizado pelo web.dev.](https://web.dev/serve-images-webp/#serve-webp-images)
 
+> [Neste link](https://hopeful-raman-412695.netlify.app/image-comparsion/) você pode acompanhar um exemplo real da mesma imagem: em formato jpeg, sem compressão, totalizando 3,1MB, e ao lado, a mesma imagem, em formato Webp, com 60% de compressão lossy.
+
 ## JavaScript
 
 ### Lazy load
