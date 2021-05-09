@@ -64,6 +64,8 @@ Cumulative layout shift mede a pontuação cumulativa de todas as mudanças de l
 
 Mudanças de layout ocorrem apenas quando os elementos existentes mudam sua posição inicial. Se um novo elemento é adicionado ao DOM ou um elemento existente muda de tamanho, isso não conta como uma mudança de layout. Para uma boa experiência de usuário, a CLS deve ser menor que 0.1 [7]
 
+> [Neste link](https://hopeful-raman-412695.netlify.app/cls-example/) você pode acompanhar um exemplo real de CLS! Repare que a imagem aparece apenas após alguns segundos.
+
 ## Referências
 
 - (1) [web.dev: First Contentful Paint (FCP)](https://web.dev/fcp/);
