@@ -1,14 +1,22 @@
-# Default starter for Gridsome
+# Um Guia voltado à otimização de desempenho em aplicações web front-end 
 
-This is the project you get when you run `gridsome create new-project`.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a6bb57e5-9928-48fd-a781-882489de7531/deploy-status)](https://app.netlify.com/sites/hopeful-raman-412695/deploys)
 
-### 1. Install Gridsome CLI tool if you don't have
+Este projeto é resultado do Trabalho de Conclusão de Curso 2, na Universidade de Brasília, voltado à otimização de desempenho em aplicações _web_.
 
-`npm install --global @gridsome/cli`
+## Sobre
 
-### 2. Create a Gridsome project
+O projeto traz uma série de recursos e artigos em português acerca do tema, com informações curadas a partir de iniciativas como o [_Web Vitals_](https://web.dev/vitals/).
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+### Executando o projeto localmente
+
+1. Clone o repositório;
+
+2. Entre na pasta do projeto:  
+   `cd guia-otimizacao`
+
+3. Instale as dependências:  
+   `npm install` ou `yarn`
+
+4. Execute o projeto:  
+   `npm run develop` ou `yarn develop`
